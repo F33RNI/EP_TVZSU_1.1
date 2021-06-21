@@ -35,3 +35,6 @@ AForgeNET для технического зрения, библиотека Sha
 видеопоследовательности (видеофайла).
 
 ```
+
+
+![Screenshot](SCREENSHOT.jpg "Screenshot")
