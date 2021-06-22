@@ -201,25 +201,45 @@ class Window(QMainWindow):
 
             self.ubidots_points = []
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_0')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_0')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_1')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_1')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_2')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_2')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_3')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_3')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_4')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_4')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_5')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_5')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_6')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_6')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_7')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_7')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_8')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_8')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
             self.ubidots_points.append(list(map(float, str(
-                variables[variables_str.index('point_9')].get_values(1)[0]['context']['position']).split(','))))
+                variables[variables_str.index('point_9')].get_values(1)[0]['context']['position']).replace('\"',
+                                                                                                           '').split(
+                ','))))
         except:
             print('Error reading Ubidots data!')
 
